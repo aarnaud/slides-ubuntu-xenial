@@ -193,7 +193,7 @@
         <Identifier>Docker on Windows 10 with VirtualBox</Identifier>
         <Value>1286</Value>
         <RawString>1286</RawString>
-        <JSON>{"compiler-options":{"compiler-options":"ln: failed to create symbolic link 'symlink': Protocol error"}}</JSON>
+        <JSON>{}</JSON>
       </Entry>
     </Data>
   </Result>

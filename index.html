@@ -45,7 +45,7 @@
             <h3>for Web development</h3>
             <p>
                 <small>Created by <a href="http://www.anthony-arnaud.fr">Anthony ARNAUD</a> / <a
-                        href="http://twitter.com/bluelogon">@bluelogon</a></small>
+                        href="http://twitter.com/bluelogon">@bluelogon</a> - 10/06/2016</small>
             </p>
         </section>
         <section>
@@ -68,10 +68,83 @@
             <h3>Weakness</h3>
             <ul>
                 <li class="fragment">Microsoft Office</li>
-                <li class="fragment">Difficult for newbie</li>
+                <li class="fragment">Difficult for newbie (format by school) </li>
                 <li class="fragment">Property driver/protocol support</li>
                 <li class="fragment">Graphical interface</li>
             </ul>
+        </section>
+        <section>
+            <h2>So, Docker on Microsoft Windows ?</h2>
+            <img data-src="ressources/img/gif/wtf.gif">
+        </section>
+        <section>
+            <section>
+                <h3>Docker Benchmarking</h2>
+                <ul>
+                    <li class="fragment">on Ubuntu 16.04</li>
+                    <li class="fragment">on Windows 10 with VirtualBox</li>
+                    <li class="fragment">on Windows 10 with Hyper-V (Docker Beta)</li>
+                </ul>
+            </section>
+            <section 
+                data-transition="slide"
+                data-background-image="docker-benchmark/phoronix-test-suite/test-results/merge/result-graphs/systems.svg"
+                data-background-size="contain">
+            </section>
+            <section 
+                data-background-image="docker-benchmark/phoronix-test-suite/test-results/merge/result-graphs/3.svg"
+                data-background-size="contain">
+            </section>
+            <section 
+                data-background-image="docker-benchmark/phoronix-test-suite/test-results/merge/result-graphs/4.svg"
+                data-background-size="contain">
+            </section>
+            <section 
+                data-background-image="docker-benchmark/phoronix-test-suite/test-results/merge/result-graphs/5.svg"
+                data-background-size="contain">
+            </section>
+            <section 
+                data-background-image="docker-benchmark/phoronix-test-suite/test-results/merge/result-graphs/6.svg"
+                data-background-size="contain">
+            </section>
+            <section 
+                data-background-image="docker-benchmark/phoronix-test-suite/test-results/merge/result-graphs/7.svg"
+                data-background-size="contain">
+            </section>
+            <section 
+                data-background-image="docker-benchmark/phoronix-test-suite/test-results/merge/result-graphs/8.svg"
+                data-background-size="contain">
+            </section>
+            <section 
+                data-background-image="docker-benchmark/phoronix-test-suite/test-results/merge/result-graphs/9.svg"
+                data-background-size="contain">
+            </section>
+            <section 
+                data-background-image="docker-benchmark/phoronix-test-suite/test-results/merge/result-graphs/10.svg"
+                data-background-size="contain">
+            </section>
+            <section>
+                <h3>Windows errors</h3>
+                <img data-src="ressources/img/gif/error.gif">
+                <ul>
+                    <li class="fragment">
+                        <b>Hyper-V</b>
+                        <pre>ln: failed to create symbolic link 'symlink': Operation not supported</pre>
+                    </li>
+                    <li class="fragment">
+                        <b>VirtualBox</b>
+                        <pre>ln: failed to create symbolic link 'symlink': Protocol error</pre>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h3>Docker and the security</h3>
+                <img data-src="ressources/img/docker/DockerHyper-V8.PNG">
+            </section>
+            <section>
+                <h3>Docker and the security</h3>
+                <img data-src="ressources/img/docker/DockerHyper-V7.PNG">
+            </section>
         </section>
     </div>
 
@@ -90,6 +163,19 @@
         center: true,
 
         transition: 'slide', // none/fade/slide/convex/concave/zoom
+        
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1440,
+        height: 960,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 0.1,
+
+        // Bounds for smallest/largest possible scale to apply to content
+        minScale: 1.0,
+        maxScale: 3,
 
         // More info https://github.com/hakimel/reveal.js#dependencies
         dependencies: [

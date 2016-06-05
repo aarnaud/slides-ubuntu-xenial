@@ -157,7 +157,7 @@
         <Identifier>Docker on Windows 10 with Hyper-V</Identifier>
         <Value>993</Value>
         <RawString>993</RawString>
-        <JSON>{"compiler-options":{"compiler-options":"ln: failed to create symbolic link 'symlink': Operation not supported"}}</JSON>
+        <JSON>{}</JSON>
       </Entry>
     </Data>
   </Result>
