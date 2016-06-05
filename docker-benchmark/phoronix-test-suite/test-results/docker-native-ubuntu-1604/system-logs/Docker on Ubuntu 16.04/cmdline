@@ -1,0 +1,1 @@
+BOOT_IMAGE=/@/boot/vmlinuz-4.4.0-22-generic.efi.signed root=UUID=fbf7ab67-ac04-441f-9c67-9471f08ba43d ro rootflags=subvol=@ quiet splash vt.handoff=7

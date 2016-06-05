@@ -1,0 +1,460 @@
+Initializing cgroup subsys cpuset
+Initializing cgroup subsys cpu
+Initializing cgroup subsys cpuacct
+Linux version 4.4.11-moby (root@608dc5c9f64e) (gcc version 5.2.1 20151010 (Ubuntu 5.2.1-22ubuntu2) ) #1 SMP Wed Jun 1 19:23:57 UTC 2016
+Command line: earlyprintk=serial console=ttyS0
+
+x86/fpu: xstate_offset[2]:  576, xstate_sizes[2]:  256
+x86/fpu: Supporting XSAVE feature 0x01: 'x87 floating point registers'
+x86/fpu: Supporting XSAVE feature 0x02: 'SSE registers'
+x86/fpu: Supporting XSAVE feature 0x04: 'AVX registers'
+x86/fpu: Enabled xstate features 0x7, context size is 832 bytes, using 'standard' format.
+x86/fpu: Using 'eager' FPU context switches.
+e820: BIOS-provided physical RAM map:
+BIOS-e820: [mem 0x0000000000000000-0x000000000009ffff] usable
+BIOS-e820: [mem 0x0000000000100000-0x000000007ece6fff] usable
+BIOS-e820: [mem 0x000000007ece7000-0x000000007ece7fff] ACPI data
+BIOS-e820: [mem 0x000000007ece8000-0x000000007eceefff] reserved
+BIOS-e820: [mem 0x000000007ecef000-0x000000007ecf1fff] ACPI data
+BIOS-e820: [mem 0x000000007ecf2000-0x000000007ed1afff] reserved
+BIOS-e820: [mem 0x000000007ed1b000-0x000000007fd9afff] usable
+BIOS-e820: [mem 0x000000007fd9b000-0x000000007fdf2fff] reserved
+BIOS-e820: [mem 0x000000007fdf3000-0x000000007fdfafff] ACPI data
+BIOS-e820: [mem 0x000000007fdfb000-0x000000007fdfefff] ACPI NVS
+BIOS-e820: [mem 0x000000007fdff000-0x000000007fdfffff] usable
+BIOS-e820: [mem 0x0000000100000000-0x00000003afffffff] usable
+bootconsole [earlyser0] enabled
+ERROR: earlyprintk= earlyser already used
+NX (Execute Disable) protection: active
+efi: EFI v2.31 by EDK II
+efi:  ACPI=0x7fdfa000  ACPI 2.0=0x7fdfa014  SMBIOS=0x7fdf2000 
+SMBIOS 2.4 present.
+DMI: Microsoft Corporation Virtual Machine/Virtual Machine, BIOS Hyper-V UEFI Release v1.0 11/26/2012
+Hypervisor detected: Microsoft HyperV
+HyperV: features 0xe7f, hints 0x42c
+HyperV: LAPIC Timer Frequency: 0x1e8480
+clocksource: hyperv_clocksource: mask: 0xffffffffffffffff max_cycles: 0x24e6a1710, max_idle_ns: 440795202120 ns
+tsc: Marking TSC unstable due to running on Hyper-V
+e820: update [mem 0x00000000-0x00000fff] usable ==> reserved
+e820: remove [mem 0x000a0000-0x000fffff] usable
+e820: last_pfn = 0x3b0000 max_arch_pfn = 0x400000000
+MTRR default type: uncachable
+MTRR fixed ranges enabled:
+  00000-9FFFF write-back
+  A0000-FFFFF uncachable
+MTRR variable ranges enabled:
+  0 base 0000000000 mask 7F00000000 write-back
+  1 base 0100000000 mask 7000000000 write-back
+  2 disabled
+  3 disabled
+  4 disabled
+  5 disabled
+  6 disabled
+  7 disabled
+x86/PAT: Configuration [0-7]: WB  WC  UC- UC  WB  WC  UC- WT  
+e820: last_pfn = 0x7fe00 max_arch_pfn = 0x400000000
+Base memory trampoline at [ffff880000099000] 99000 size 24576
+BRK [0x01b7a000, 0x01b7afff] PGTABLE
+BRK [0x01b7b000, 0x01b7bfff] PGTABLE
+BRK [0x01b7c000, 0x01b7cfff] PGTABLE
+BRK [0x01b7d000, 0x01b7dfff] PGTABLE
+BRK [0x01b7e000, 0x01b7efff] PGTABLE
+BRK [0x01b7f000, 0x01b7ffff] PGTABLE
+RAMDISK: [mem 0x7874e000-0x7b7a9fff]
+ACPI: Early table checksum verification disabled
+ACPI: RSDP 0x000000007FDFA014 000024 (v02 VRTUAL)
+ACPI: XSDT 0x000000007FDF90E8 000064 (v01 VRTUAL MICROSFT 00000001 MSFT 00000001)
+ACPI: FACP 0x000000007FDF7000 0000F4 (v04 VRTUAL MICROSFT 00000001 MSFT 00000001)
+ACPI: DSDT 0x000000007FDF3000 00129A (v02 MSFTVM DSDT01   00000001 MSFT 04000000)
+ACPI: FACS 0x000000007FDFE000 000040
+ACPI: APIC 0x000000007FDF8000 00024C (v02 VRTUAL MICROSFT 00000001 MSFT 00000001)
+ACPI: OEM0 0x000000007FDF6000 000064 (v01 VRTUAL MICROSFT 00000001 MSFT 00000001)
+ACPI: WAET 0x000000007FDF5000 000028 (v01 VRTUAL MICROSFT 00000001 MSFT 00000001)
+ACPI: OEM1 0x000000007ECF1000 00009E (v02 MSFTVM UARTS    00000001 MSFT 04000000)
+ACPI: OEM2 0x000000007ECF0000 0002E2 (v02 MSFTVM VTPM2    00000001 MSFT 04000000)
+ACPI: SRAT 0x000000007ECEF000 000110 (v02 VRTUAL MICROSFT 00000001 MSFT 00000001)
+ACPI: BGRT 0x000000007ECE7000 000038 (v01 VRTUAL MICROSFT 00000001 MSFT 00000001)
+ACPI: Local APIC address 0xfee00000
+Zone ranges:
+  DMA      [mem 0x0000000000001000-0x0000000000ffffff]
+  DMA32    [mem 0x0000000001000000-0x00000000ffffffff]
+  Normal   [mem 0x0000000100000000-0x00000003afffffff]
+Movable zone start for each node
+Early memory node ranges
+  node   0: [mem 0x0000000000001000-0x000000000009ffff]
+  node   0: [mem 0x0000000000100000-0x000000007ece6fff]
+  node   0: [mem 0x000000007ed1b000-0x000000007fd9afff]
+  node   0: [mem 0x000000007fdff000-0x000000007fdfffff]
+  node   0: [mem 0x0000000100000000-0x00000003afffffff]
+Initmem setup node 0 [mem 0x0000000000001000-0x00000003afffffff]
+On node 0 totalpages: 3341575
+  DMA zone: 64 pages used for memmap
+  DMA zone: 55 pages reserved
+  DMA zone: 3999 pages, LIFO batch:0
+  DMA32 zone: 8118 pages used for memmap
+  DMA32 zone: 519528 pages, LIFO batch:31
+  Normal zone: 44032 pages used for memmap
+  Normal zone: 2818048 pages, LIFO batch:31
+ACPI: PM-Timer IO Port: 0x408
+ACPI: Local APIC address 0xfee00000
+IOAPIC[0]: apic_id 4, version 17, address 0xfec00000, GSI 0-23
+ACPI: INT_SRC_OVR (bus 0 bus_irq 0 global_irq 2 dfl dfl)
+ACPI: INT_SRC_OVR (bus 0 bus_irq 9 global_irq 9 high level)
+ACPI: IRQ0 used by override.
+ACPI: IRQ9 used by override.
+Using ACPI (MADT) for SMP configuration information
+smpboot: 64 Processors exceeds NR_CPUS limit of 8
+smpboot: Allowing 8 CPUs, 4 hotplug CPUs
+e820: [mem 0x7fe00000-0xffffffff] available for PCI devices
+Booting paravirtualized kernel on bare hardware
+clocksource: refined-jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112604462750000 ns
+setup_percpu: NR_CPUS:8 nr_cpumask_bits:8 nr_cpu_ids:8 nr_node_ids:1
+PERCPU: Embedded 33 pages/cpu @ffff8803afc00000 s95064 r8192 d31912 u262144
+pcpu-alloc: s95064 r8192 d31912 u262144 alloc=1*2097152
+pcpu-alloc: [0] 0 1 2 3 4 5 6 7 
+Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 3289306
+Kernel command line: earlyprintk=serial console=ttyS0
+
+PID hash table entries: 4096 (order: 3, 32768 bytes)
+Dentry cache hash table entries: 2097152 (order: 12, 16777216 bytes)
+Inode-cache hash table entries: 1048576 (order: 11, 8388608 bytes)
+Memory: 12988612K/13366300K available (6384K kernel code, 1192K rwdata, 2536K rodata, 944K init, 652K bss, 377688K reserved, 0K cma-reserved)
+Hierarchical RCU implementation.
+	Build-time adjustment of leaf fanout to 64.
+Using NULL legacy PIC
+NR_IRQS:4352 nr_irqs:488 0
+Console: colour dummy device 80x25
+console [ttyS0] enabled
+bootconsole [earlyser0] disabled
+tsc: Fast TSC calibration failed
+tsc: Unable to calibrate against PIT
+tsc: using PMTIMER reference calibration
+tsc: Detected 3015.753 MHz processor
+Calibrating delay loop (skipped), value calculated using timer frequency.. 6031.50 BogoMIPS (lpj=30157530)
+pid_max: default: 32768 minimum: 301
+ACPI: Core revision 20150930
+ACPI: 1 ACPI AML tables successfully acquired and loaded
+Security Framework initialized
+Mount-cache hash table entries: 32768 (order: 6, 262144 bytes)
+Mountpoint-cache hash table entries: 32768 (order: 6, 262144 bytes)
+Initializing cgroup subsys io
+Initializing cgroup subsys memory
+Initializing cgroup subsys devices
+Initializing cgroup subsys freezer
+Initializing cgroup subsys net_cls
+Initializing cgroup subsys perf_event
+Initializing cgroup subsys net_prio
+Initializing cgroup subsys hugetlb
+Initializing cgroup subsys pids
+CPU: Physical Processor ID: 0
+CPU: Processor Core ID: 0
+Last level iTLB entries: 4KB 1024, 2MB 1024, 4MB 1024
+Last level dTLB entries: 4KB 1024, 2MB 1024, 4MB 1024, 1GB 4
+Freeing SMP alternatives memory: 20K (ffffffff81ad1000 - ffffffff81ad6000)
+smpboot: CPU0: Intel(R) Core(TM) i5-4440 CPU @ 3.10GHz (family: 0x6, model: 0x3c, stepping: 0x3)
+Performance Events: unsupported p6 CPU model 60 no PMU driver, software events only.
+x86: Booting SMP configuration:
+.... node  #0, CPUs:      #1 #2 #3
+x86: Booted up 1 node, 4 CPUs
+smpboot: Total of 4 processors activated (24126.02 BogoMIPS)
+devtmpfs: initialized
+clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112604462750000 ns
+NET: Registered protocol family 16
+cpuidle: using governor ladder
+cpuidle: using governor menu
+ACPI: bus type PCI registered
+PCI: Fatal: No config space access function found
+ACPI: Added _OSI(Module Device)
+ACPI: Added _OSI(Processor Device)
+ACPI: Added _OSI(3.0 _SCP Extensions)
+ACPI: Added _OSI(Processor Aggregator Device)
+ACPI: Executed 1 blocks of module-level executable AML code
+ACPI: Dynamic OEM Table Load:
+ACPI: OEM1 0x0000000000000000 00009E (v02 MSFTVM UARTS    00000001 MSFT 04000000)
+ACPI: Interpreter enabled
+ACPI: (supports S0 S5)
+ACPI: Using IOAPIC for interrupt routing
+PCI: Using host bridge windows from ACPI; if necessary, use "pci=nocrs" and report a bug
+ACPI: Enabled 1 GPEs in block 00 to 0F
+vgaarb: loaded
+SCSI subsystem initialized
+pps_core: LinuxPPS API ver. 1 registered
+pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+PTP clock support registered
+wmi: Mapper loaded
+clocksource: hyperv_clocksource_tsc_page: mask: 0xffffffffffffffff max_cycles: 0x24e6a1710, max_idle_ns: 440795202120 ns
+hv_vmbus: Hyper-V Host Build:10586-10.0-0-0.212; Vmbus version:4.0
+PCI: Using ACPI for IRQ routing
+PCI: System does not support PCI
+clocksource: Switched to clocksource hyperv_clocksource_tsc_page
+FS-Cache: Loaded
+CacheFiles: Loaded
+pnp: PnP ACPI init
+pnp 00:00: Plug and Play ACPI device, IDs PNP0b00 (active)
+pnp 00:01: Plug and Play ACPI device, IDs PNP0501 (active)
+pnp 00:02: Plug and Play ACPI device, IDs PNP0501 (active)
+pnp: PnP ACPI: found 3 devices
+clocksource: acpi_pm: mask: 0xffffff max_cycles: 0xffffff, max_idle_ns: 2085701024 ns
+NET: Registered protocol family 2
+TCP established hash table entries: 131072 (order: 8, 1048576 bytes)
+TCP bind hash table entries: 65536 (order: 8, 1048576 bytes)
+TCP: Hash tables configured (established 131072 bind 65536)
+UDP hash table entries: 8192 (order: 6, 262144 bytes)
+UDP-Lite hash table entries: 8192 (order: 6, 262144 bytes)
+NET: Registered protocol family 1
+RPC: Registered named UNIX socket transport module.
+RPC: Registered udp transport module.
+RPC: Registered tcp transport module.
+RPC: Registered tcp NFSv4.1 backchannel transport module.
+PCI: CLS 0 bytes, default 64
+Unpacking initramfs...
+Freeing initrd memory: 49520K (ffff88007874e000 - ffff88007b7aa000)
+PCI-DMA: Using software bounce buffering for IO (SWIOTLB)
+software IO TLB [mem 0x7474e000-0x7874e000] (64MB) mapped at [ffff88007474e000-ffff88007874dfff]
+clocksource: tsc: mask: 0xffffffffffffffff max_cycles: 0x2b786693776, max_idle_ns: 440795239020 ns
+RAPL PMU detected, API unit is 2^-32 Joules, 4 fixed counters 10737418240 ms ovfl timer
+hw unit of domain pp0-core 2^-0 Joules
+hw unit of domain package 2^-0 Joules
+hw unit of domain dram 2^-0 Joules
+hw unit of domain pp1-gpu 2^-0 Joules
+futex hash table entries: 2048 (order: 5, 131072 bytes)
+HugeTLB registered 2 MB page size, pre-allocated 0 pages
+FS-Cache: Netfs 'nfs' registered for caching
+NFS: Registering the id_resolver key type
+Key type id_resolver registered
+Key type id_legacy registered
+nfs4filelayout_init: NFSv4 File Layout Driver Registering...
+Installing knfsd (copyright (C) 1996 okir@monad.swb.de).
+FS-Cache: Netfs 'cifs' registered for caching
+ntfs: driver 2.1.32 [Flags: R/O].
+fuse init (API version 7.23)
+9p: Installing v9fs 9p2000 file system support
+FS-Cache: Netfs '9p' registered for caching
+aufs 4.4-20160516
+Key type big_key registered
+NET: Registered protocol family 38
+Block layer SCSI generic (bsg) driver version 0.4 loaded (major 251)
+io scheduler noop registered
+io scheduler deadline registered (default)
+io scheduler cfq registered
+pci_hotplug: PCI Hot Plug PCI Core version: 0.5
+pciehp: PCI Express Hot Plug Controller Driver version: 0.4
+shpchp: Standard Hot Plug PCI Controller Driver version: 0.4
+hv_vmbus: registering driver hyperv_fb
+hyperv_fb: Screen resolution: 1152x864, Color depth: 32
+fbcon: hyperv_fb (fb0) is primary device
+Console: switching to colour frame buffer device 144x54
+efifb: probing for efifb
+efifb: framebuffer at 0x80000000, mapped to 0xffffc90000400000, using 3072k, total 3072k
+efifb: mode is 1024x768x32, linelength=4096, pages=1
+efifb: scrolling: redraw
+efifb: Truecolor: size=8:8:8:8, shift=24:16:8:0
+fb1: EFI VGA frame buffer device
+intel_idle: does not run on family 6 model 60
+GHES: HEST is not enabled!
+00:01: ttyS0 at I/O 0x3f8 (irq = 4, base_baud = 115200) is a 16550A
+00:02: ttyS1 at I/O 0x2f8 (irq = 3, base_baud = 115200) is a 16550A
+Initializing Nozomi driver 2.1d
+Non-volatile memory driver v1.3
+Hangcheck: starting hangcheck timer 0.9.1 (tick is 180 seconds, margin is 60 seconds).
+[drm] Initialized drm 1.1.0 20060810
+loop: module loaded
+hv_vmbus: registering driver hv_storvsc
+scsi host0: storvsc_host_t
+scsi 0:0:0:0: Direct-Access     Msft     Virtual Disk     1.0  PQ: 0 ANSI: 5
+scsi 0:0:0:1: CD-ROM            Msft     Virtual DVD-ROM  1.0  PQ: 0 ANSI: 0
+Ethernet Channel Bonding Driver: v3.7.1 (April 27, 2011)
+sd 0:0:0:0: [sda] 125829120 512-byte logical blocks: (64.4 GB/60.0 GiB)
+sd 0:0:0:0: [sda] 4096-byte physical blocks
+sd 0:0:0:0: [sda] Write Protect is off
+sd 0:0:0:0: [sda] Mode Sense: 0f 00 00 00
+sd 0:0:0:0: [sda] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
+ sda: sda1 sda2
+sd 0:0:0:0: [sda] Attached SCSI disk
+tun: Universal TUN/TAP device driver, 1.6
+tun: (C) 1999-2004 Max Krasnyansky <maxk@qualcomm.com>
+ixgbevf: Intel(R) 10 Gigabit PCI Express Virtual Function Network Driver - version 2.12.1-k
+ixgbevf: Copyright (c) 2009 - 2012 Intel Corporation.
+PPP generic driver version 2.4.2
+VMware vmxnet3 virtual NIC driver - version 1.4.5.0-k-NAPI
+hv_vmbus: registering driver hv_netvsc
+hv_netvsc: hv_netvsc channel opened successfully
+hv_netvsc vmbus_14: Send section size: 6144, Section count:2560
+hv_netvsc vmbus_14: Device MAC 00:15:5d:4b:01:00 link state up
+hv_vmbus: registering driver hyperv_keyboard
+mousedev: PS/2 mouse device common for all mice
+input: PC Speaker as /devices/platform/pcspkr/input/input0
+rtc_cmos 00:00: RTC can wake from S4
+rtc_cmos 00:00: rtc core: registered rtc_cmos as rtc0
+rtc_cmos 00:00: alarms up to one month, 114 bytes nvram
+i2c /dev entries driver
+EFI Variables Facility v0.08 2004-May-17
+pstore: Registered efi as persistent store backend
+hv_utils: Registering HyperV Utility Driver
+hv_vmbus: registering driver hv_util
+hv_vmbus: registering driver hv_balloon
+oprofile: using timer interrupt.
+GACT probability on
+Mirror/redirect action on
+Simple TC action Loaded
+netem: version 1.3
+u32 classifier
+    Performance counters on
+    input device check on
+    Actions configured
+Netfilter messages via NETLINK v0.30.
+nfnl_acct: registering with nfnetlink.
+nf_conntrack version 0.5.0 (65536 buckets, 262144 max)
+ctnetlink v0.93: registering with nfnetlink.
+nf_tables: (c) 2007-2009 Patrick McHardy <kaber@trash.net>
+nf_tables_compat: (c) 2012 Pablo Neira Ayuso <pablo@netfilter.org>
+xt_time: kernel timezone is -0000
+ip_set: protocol 6
+IPVS: Registered protocols ()
+IPVS: Connection hash table configured (size=4096, memory=64Kbytes)
+IPVS: Creating netns size=1328 id=0
+IPVS: ipvs loaded.
+gre: GRE over IPv4 demultiplexor driver
+ip_tables: (C) 2000-2006 Netfilter Core Team
+ipt_CLUSTERIP: ClusterIP Version 0.8 loaded successfully
+arp_tables: (C) 2002 David S. Miller
+Initializing XFRM netlink socket
+NET: Registered protocol family 10
+mip6: Mobile IPv6
+ip6_tables: (C) 2000-2006 Netfilter Core Team
+sit: IPv6 over IPv4 tunneling driver
+ip6_gre: GRE over IPv6 tunneling driver
+NET: Registered protocol family 17
+NET: Registered protocol family 15
+bridge: automatic filtering via arp/ip/ip6tables has been deprecated. Update your scripts to load br_netfilter if you need this.
+Bridge firewalling registered
+Ebtables v2.0 registered
+l2tp_core: L2TP core driver, V2.0
+8021q: 802.1Q VLAN Support v1.8
+9pnet: Installing 9P2000 support
+Key type dns_resolver registered
+openvswitch: Open vSwitch switching datapath
+hv_vmbus: registering driver hv_sock
+NET: Registered protocol family 43
+mpls_gso: MPLS GSO support
+microcode: CPU0 sig=0x306c3, pf=0x1, revision=0xffffffff
+microcode: CPU1 sig=0x306c3, pf=0x1, revision=0xffffffff
+microcode: CPU2 sig=0x306c3, pf=0x1, revision=0xffffffff
+microcode: CPU3 sig=0x306c3, pf=0x1, revision=0xffffffff
+microcode: Microcode Update Driver: v2.01 <tigran@aivazian.fsnet.co.uk>, Peter Oruba
+AVX2 version of gcm_enc/dec engaged.
+AES CTR mode by8 optimization enabled
+registered taskstats version 1
+Key type encrypted registered
+rtc_cmos 00:00: setting system clock to 2016-06-04 14:24:12 UTC (1465050252)
+Freeing unused kernel memory: 944K (ffffffff819e5000 - ffffffff81ad1000)
+EXT4-fs (sda2): recovery complete
+EXT4-fs (sda2): mounted filesystem with ordered data mode. Opts: (null)
+Adding 4091900k swap on /dev/sda1.  Priority:-1 extents:1 across:4091900k FS
+random: tr urandom read with 16 bits of entropy available
+IPv6: ADDRCONF(NETDEV_UP): docker0: link is not ready
+hv_balloon: Received INFO_TYPE_MAX_PAGE_CNT
+hv_balloon: Data Size is 8
+nf_conntrack: automatic helper assignment is deprecated and it will be removed soon. Use the iptables CT target to attach helpers instead.
+random: nonblocking pool is initialized
+aufs au_opts_verify:1597:docker[1526]: dirperm1 breaks the protection by the permission bits on the lower branch
+device veth2fe6436 entered promiscuous mode
+IPv6: ADDRCONF(NETDEV_UP): veth2fe6436: link is not ready
+IPVS: Creating netns size=1328 id=1
+cgroup: docker-runc (2446) created nested cgroup for controller "memory" which has incomplete hierarchy support. Nested cgroups may change behavior in the future.
+cgroup: "memory" requires setting use_hierarchy to 1 on the root
+eth0: renamed from vethd03b15e
+IPv6: ADDRCONF(NETDEV_CHANGE): veth2fe6436: link becomes ready
+docker0: port 1(veth2fe6436) entered forwarding state
+docker0: port 1(veth2fe6436) entered forwarding state
+IPv6: ADDRCONF(NETDEV_CHANGE): docker0: link becomes ready
+docker0: port 1(veth2fe6436) entered forwarding state
+vethd03b15e: renamed from eth0
+docker0: port 1(veth2fe6436) entered disabled state
+docker0: port 1(veth2fe6436) entered disabled state
+device veth2fe6436 left promiscuous mode
+docker0: port 1(veth2fe6436) entered disabled state
+device vethb2dae7f entered promiscuous mode
+IPv6: ADDRCONF(NETDEV_UP): vethb2dae7f: link is not ready
+docker0: port 1(vethb2dae7f) entered forwarding state
+docker0: port 1(vethb2dae7f) entered forwarding state
+IPVS: Creating netns size=1328 id=2
+eth0: renamed from vethcbe9ba2
+docker0: port 1(vethb2dae7f) entered disabled state
+IPv6: ADDRCONF(NETDEV_CHANGE): vethb2dae7f: link becomes ready
+docker0: port 1(vethb2dae7f) entered forwarding state
+docker0: port 1(vethb2dae7f) entered forwarding state
+docker0: port 1(vethb2dae7f) entered forwarding state
+vethcbe9ba2: renamed from eth0
+docker0: port 1(vethb2dae7f) entered disabled state
+docker0: port 1(vethb2dae7f) entered disabled state
+device vethb2dae7f left promiscuous mode
+docker0: port 1(vethb2dae7f) entered disabled state
+auplink[9208]: segfault at 7fffe4f043e8 ip 000000000043d049 sp 00007fffe4f043f0 error 6 in auplink[400000+ca000]
+aufs au_plink_put:422:docker[1443]: pseudo-link is not flushed
+auplink[9238]: segfault at 7ffde54dfc88 ip 000000000043d049 sp 00007ffde54dfc90 error 6 in auplink[400000+ca000]
+device vethbc73951 entered promiscuous mode
+IPv6: ADDRCONF(NETDEV_UP): vethbc73951: link is not ready
+IPVS: Creating netns size=1328 id=3
+eth0: renamed from veth9fc824d
+IPv6: ADDRCONF(NETDEV_CHANGE): vethbc73951: link becomes ready
+docker0: port 1(vethbc73951) entered forwarding state
+docker0: port 1(vethbc73951) entered forwarding state
+veth9fc824d: renamed from eth0
+docker0: port 1(vethbc73951) entered disabled state
+docker0: port 1(vethbc73951) entered disabled state
+device vethbc73951 left promiscuous mode
+docker0: port 1(vethbc73951) entered disabled state
+device veth9902e60 entered promiscuous mode
+IPv6: ADDRCONF(NETDEV_UP): veth9902e60: link is not ready
+docker0: port 1(veth9902e60) entered forwarding state
+docker0: port 1(veth9902e60) entered forwarding state
+IPVS: Creating netns size=1328 id=4
+eth0: renamed from vethba60122
+IPv6: ADDRCONF(NETDEV_CHANGE): veth9902e60: link becomes ready
+docker0: port 1(veth9902e60) entered forwarding state
+vethba60122: renamed from eth0
+docker0: port 1(veth9902e60) entered disabled state
+docker0: port 1(veth9902e60) entered disabled state
+device veth9902e60 left promiscuous mode
+docker0: port 1(veth9902e60) entered disabled state
+auplink[12628]: segfault at 7ffc12d78c98 ip 000000000043d049 sp 00007ffc12d78ca0 error 6 in auplink[400000+ca000]
+aufs au_plink_put:422:docker[2387]: pseudo-link is not flushed
+auplink[12645]: segfault at 7fff8220c7c8 ip 000000000043d049 sp 00007fff8220c7d0 error 6 in auplink[400000+ca000]
+device veth7d39e47 entered promiscuous mode
+IPv6: ADDRCONF(NETDEV_UP): veth7d39e47: link is not ready
+IPVS: Creating netns size=1328 id=5
+eth0: renamed from vethb5e3edc
+IPv6: ADDRCONF(NETDEV_CHANGE): veth7d39e47: link becomes ready
+docker0: port 1(veth7d39e47) entered forwarding state
+docker0: port 1(veth7d39e47) entered forwarding state
+vethb5e3edc: renamed from eth0
+docker0: port 1(veth7d39e47) entered disabled state
+docker0: port 1(veth7d39e47) entered disabled state
+device veth7d39e47 left promiscuous mode
+docker0: port 1(veth7d39e47) entered disabled state
+device vethfd9bbf4 entered promiscuous mode
+IPv6: ADDRCONF(NETDEV_UP): vethfd9bbf4: link is not ready
+docker0: port 1(vethfd9bbf4) entered forwarding state
+docker0: port 1(vethfd9bbf4) entered forwarding state
+docker0: port 1(vethfd9bbf4) entered disabled state
+IPVS: Creating netns size=1328 id=6
+eth0: renamed from veth242627e
+IPv6: ADDRCONF(NETDEV_CHANGE): vethfd9bbf4: link becomes ready
+docker0: port 1(vethfd9bbf4) entered forwarding state
+docker0: port 1(vethfd9bbf4) entered forwarding state
+docker0: port 1(vethfd9bbf4) entered disabled state
+veth242627e: renamed from eth0
+docker0: port 1(vethfd9bbf4) entered disabled state
+device vethfd9bbf4 left promiscuous mode
+docker0: port 1(vethfd9bbf4) entered disabled state
+device vethebf7cc3 entered promiscuous mode
+IPv6: ADDRCONF(NETDEV_UP): vethebf7cc3: link is not ready
+IPVS: Creating netns size=1328 id=7
+eth0: renamed from veth9464a3d
+IPv6: ADDRCONF(NETDEV_CHANGE): vethebf7cc3: link becomes ready
+docker0: port 1(vethebf7cc3) entered forwarding state
+docker0: port 1(vethebf7cc3) entered forwarding state
+docker0: port 1(vethebf7cc3) entered forwarding state
+CIFS VFS: Send error in Close = -512
+CIFS VFS: Send error in Flush = -512

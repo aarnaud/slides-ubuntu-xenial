@@ -1,0 +1,331 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v6.4.0-->
+<PhoronixTestSuite>
+  <Generated>
+    <Title>docker-native-ubuntu-16.04</Title>
+    <LastModified>2016-06-05 16:01:01</LastModified>
+    <TestClient>Phoronix Test Suite v6.4.0 (Hasvik)</TestClient>
+    <Description>Intel Core i5-4440 testing on Ubuntu 16.04 via the Phoronix Test Suite.</Description>
+    <Notes></Notes>
+    <InternalTags></InternalTags>
+    <ReferenceID></ReferenceID>
+    <PreSetEnvironmentVariables></PreSetEnvironmentVariables>
+  </Generated>
+  <System>
+    <Identifier>Docker on Ubuntu 16.04</Identifier>
+    <Hardware>Processor: Intel Core i5-4440 @ 3.30GHz (4 Cores), Motherboard: ASUS H87I-PLUS, Memory: 16384MB, Disk: 120GB Crucial_CT120M50 + 2 x 1000GB Hitachi HDS72101, Audio: Realtek ALC887-VD</Hardware>
+    <Software>OS: Ubuntu 16.04, Kernel: 4.4.0-22-generic (x86_64), Compiler: GCC 5.3.1 20160413, File-System: btrfs, Screen Resolution: 1024x768</Software>
+    <User>root</User>
+    <TimeStamp>2016-06-05 00:44:02</TimeStamp>
+    <TestClientVersion></TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"compiler-configuration":"--build=x86_64-linux-gnu --disable-browser-plugin --disable-vtable-verify --disable-werror --enable-checking=release --enable-clocale=gnu --enable-gnu-unique-object --enable-gtk-cairo --enable-java-awt=gtk --enable-java-home --enable-languages=c,ada,c++,java,go,d,fortran,objc,obj-c++ --enable-libmpx --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-multiarch --enable-multilib --enable-nls --enable-objc-gc --enable-plugin --enable-shared --enable-threads=posix --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-abi=m64 --with-arch-32=i686 --with-arch-directory=amd64 --with-default-libstdcxx-abi=new --with-multilib-list=m32,m64,mx32 --with-tune=generic -v","disk-scheduler":"DEADLINE","disk-mount-options":"relatime,rw,space_cache,ssd,subvol=\/@\/tmp\/docker-benchmark\/phoronix-test-suite,subvolid=257","cpu-scaling-governor":"intel_pstate powersave"}</JSON>
+  </System>
+  <System>
+    <Identifier>Docker on Windows 10 with VirtualBox</Identifier>
+    <Hardware>Processor: Intel Core i5-4440 @ 3.10GHz (4 Cores), Motherboard: Oracle VirtualBox v1.2, Memory: 13312MB, Disk: 21GB VBOX HDD</Hardware>
+    <Software>OS: Ubuntu 16.04, Kernel: 4.4.12-boot2docker (x86_64), Compiler: GCC 5.3.1 20160413, File-System: nfs, System Layer: Oracle VirtualBox</Software>
+    <User>root</User>
+    <TimeStamp>2016-06-05 11:35:10</TimeStamp>
+    <TestClientVersion></TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"compiler-configuration":"--build=x86_64-linux-gnu --disable-browser-plugin --disable-vtable-verify --disable-werror --enable-checking=release --enable-clocale=gnu --enable-gnu-unique-object --enable-gtk-cairo --enable-java-awt=gtk --enable-java-home --enable-languages=c,ada,c++,java,go,d,fortran,objc,obj-c++ --enable-libmpx --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-multiarch --enable-multilib --enable-nls --enable-objc-gc --enable-plugin --enable-shared --enable-threads=posix --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-abi=m64 --with-arch-32=i686 --with-arch-directory=amd64 --with-default-libstdcxx-abi=new --with-multilib-list=m32,m64,mx32 --with-tune=generic -v","disk-scheduler":"DEADLINE"}</JSON>
+  </System>
+  <System>
+    <Identifier>Docker on Windows 10 with Hyper-V</Identifier>
+    <Hardware>Processor: Intel Core i5-4440 @ 3.02GHz (4 Cores), Motherboard: Microsoft Virtual Machine, Memory: 13312MB, Disk: 64GB Virtual Disk</Hardware>
+    <Software>OS: Ubuntu 16.04, Kernel: 4.4.11-moby (x86_64), Compiler: GCC 5.3.1 20160413, File-System: cifs, Screen Resolution: 1152x864, System Layer: microsoft</Software>
+    <User>root</User>
+    <TimeStamp>2016-06-05 11:16:57</TimeStamp>
+    <TestClientVersion></TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"compiler-configuration":"--build=x86_64-linux-gnu --disable-browser-plugin --disable-vtable-verify --disable-werror --enable-checking=release --enable-clocale=gnu --enable-gnu-unique-object --enable-gtk-cairo --enable-java-awt=gtk --enable-java-home --enable-languages=c,ada,c++,java,go,d,fortran,objc,obj-c++ --enable-libmpx --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-multiarch --enable-multilib --enable-nls --enable-objc-gc --enable-plugin --enable-shared --enable-threads=posix --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-abi=m64 --with-arch-32=i686 --with-arch-directory=amd64 --with-default-libstdcxx-abi=new --with-multilib-list=m32,m64,mx32 --with-tune=generic -v","disk-scheduler":"DEADLINE","disk-mount-options":"actimeo=1,addr=10.0.75.1,cache=strict,dir_mode=0755,domain=DESKTOP-QDSF686,file_mode=0755,gid=0,iocharset=utf8,mapposix,noforcegid,noforceuid,noperm,nounix,relatime,rsize=61440,rw,serverino,uid=0,username=anthony,vers=1.0,wsize=65536"}</JSON>
+  </System>
+  <Result>
+    <Identifier>pts/sqlite-1.9.0</Identifier>
+    <Title>SQLite</Title>
+    <AppVersion>3.8.10.2</AppVersion>
+    <Arguments></Arguments>
+    <Description>Test Target: Default Test Directory</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>Docker on Ubuntu 16.04</Identifier>
+        <Value>335.92</Value>
+        <RawString>329.90971493721:339.42325496674:338.41632294655</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -ldl -lpthread"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>Docker on Windows 10 with VirtualBox</Identifier>
+        <Value>68.25</Value>
+        <RawString>67.034621953964:66.782196998596:70.919855117798</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -ldl -lpthread"}}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/fs-mark-1.0.1</Identifier>
+    <Title>FS-Mark</Title>
+    <AppVersion>3.3</AppVersion>
+    <Arguments>-s 1048576 -n 4000 -D 32</Arguments>
+    <Description>Test: 4000 Files, 32 Sub Dirs, 1MB Size</Description>
+    <Scale>Files/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>Docker on Ubuntu 16.04</Identifier>
+        <Value>57.14</Value>
+        <RawString>56.6:54.6:59.6:58.1:56.8</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-static"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>Docker on Windows 10 with VirtualBox</Identifier>
+        <Value>118.50</Value>
+        <RawString>114.6:118.7:122.2</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-static"}}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/iozone-1.8.0</Identifier>
+    <Title>IOzone</Title>
+    <AppVersion>3.405</AppVersion>
+    <Arguments>-r 4k -s 512M -i0 -i1</Arguments>
+    <Description>Record Size: 4Kb - File Size: 512MB - Disk Test: Read Performance</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>Docker on Ubuntu 16.04</Identifier>
+        <Value>5822.61</Value>
+        <RawString>6021.046875:4841.2890625:6045.1484375:5931.4091796875:6085.3701171875:6011.4228515625</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>Docker on Windows 10 with VirtualBox</Identifier>
+        <Value>68.65</Value>
+        <RawString>80.609375:66.1533203125:66.4052734375:66.283203125:65.998046875:66.48046875</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>Docker on Windows 10 with Hyper-V</Identifier>
+        <Value>385.70</Value>
+        <RawString>382.7294921875:364.1181640625:426.2724609375:365.2822265625:451.0478515625:324.7724609375</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3"}}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/iozone-1.8.0</Identifier>
+    <Title>IOzone</Title>
+    <AppVersion>3.405</AppVersion>
+    <Arguments>-r 4k -s 512M -i0</Arguments>
+    <Description>Record Size: 4Kb - File Size: 512MB - Disk Test: Write Performance</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>Docker on Ubuntu 16.04</Identifier>
+        <Value>132.76</Value>
+        <RawString>133.3779296875:132.7939453125:132.1220703125</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>Docker on Windows 10 with VirtualBox</Identifier>
+        <Value>62.36</Value>
+        <RawString>62.3662109375:62.66015625:62.0595703125</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>Docker on Windows 10 with Hyper-V</Identifier>
+        <Value>65.12</Value>
+        <RawString>42.087890625:66.3583984375:105.0498046875:87.9794921875:42.8310546875:46.435546875</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3"}}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/ramspeed-1.4.0</Identifier>
+    <Title>RAMspeed SMP</Title>
+    <AppVersion>3.5.0</AppVersion>
+    <Arguments>COPY -b 3</Arguments>
+    <Description>Type: Copy - Benchmark: Integer</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>Docker on Ubuntu 16.04</Identifier>
+        <Value>12456.84</Value>
+        <RawString>12456.84</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":""}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>Docker on Windows 10 with VirtualBox</Identifier>
+        <Value>12187.39</Value>
+        <RawString>12187.39</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":""}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>Docker on Windows 10 with Hyper-V</Identifier>
+        <Value>11833.61</Value>
+        <RawString>11833.61</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":""}}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/ramspeed-1.4.0</Identifier>
+    <Title>RAMspeed SMP</Title>
+    <AppVersion>3.5.0</AppVersion>
+    <Arguments>COPY -b 6</Arguments>
+    <Description>Type: Copy - Benchmark: Floating Point</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>Docker on Ubuntu 16.04</Identifier>
+        <Value>12362.23</Value>
+        <RawString>12362.23</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":""}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>Docker on Windows 10 with VirtualBox</Identifier>
+        <Value>11964.75</Value>
+        <RawString>11964.75</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":""}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>Docker on Windows 10 with Hyper-V</Identifier>
+        <Value>11758.38</Value>
+        <RawString>11758.38</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":""}}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/stream-1.3.0</Identifier>
+    <Title>Stream</Title>
+    <AppVersion>2013-01-17</AppVersion>
+    <Arguments>Triad</Arguments>
+    <Description>Type: Triad</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>Docker on Ubuntu 16.04</Identifier>
+        <Value>14410.16</Value>
+        <RawString>14402.7:14406.3:14412.9:14412.7:14416.2</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -march=native -fopenmp"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>Docker on Windows 10 with VirtualBox</Identifier>
+        <Value>14108.60</Value>
+        <RawString>14092.5:14107:14126.1:14104.8:14112.6</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -march=native -fopenmp"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>Docker on Windows 10 with Hyper-V</Identifier>
+        <Value>13995.54</Value>
+        <RawString>14169.2:14173.9:13759.1:13715.5:14160</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -march=native -fopenmp"}}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/c-ray-1.1.0</Identifier>
+    <Title>C-Ray</Title>
+    <AppVersion>1.1</AppVersion>
+    <Arguments></Arguments>
+    <Description>Total Time</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>Docker on Ubuntu 16.04</Identifier>
+        <Value>28.60</Value>
+        <RawString>28.601:28.598:28.604</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lm -lpthread -O3"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>Docker on Windows 10 with VirtualBox</Identifier>
+        <Value>29.34</Value>
+        <RawString>29.381:29.285:29.355</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lm -lpthread -O3"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>Docker on Windows 10 with Hyper-V</Identifier>
+        <Value>28.91</Value>
+        <RawString>28.882:28.935:28.901</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lm -lpthread -O3"}}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/apache-1.6.1</Identifier>
+    <Title>Apache Benchmark</Title>
+    <AppVersion>2.4.7</AppVersion>
+    <Arguments></Arguments>
+    <Description>Static Web Page Serving</Description>
+    <Scale>Requests Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>Docker on Ubuntu 16.04</Identifier>
+        <Value>29828.54</Value>
+        <RawString>27274.13:28224.12:31227.88:31141.65:30540.32:30563.11</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-shared -fPIC -O2 -pthread"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>Docker on Windows 10 with VirtualBox</Identifier>
+        <Value>7111.88</Value>
+        <RawString>7055.5:7152.8:7127.35</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-shared -fPIC -O2 -pthread"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>Docker on Windows 10 with Hyper-V</Identifier>
+        <Value>4520.55</Value>
+        <RawString>4022.97:2651.23:5379.96:4209.34:5528.47:5331.3</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-shared -fPIC -O2 -pthread"}}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>symfony-demo</Identifier>
+    <Title>Symfony Demo</Title>
+    <AppVersion>2.8</AppVersion>
+    <Arguments></Arguments>
+    <Description>(composer install + cache clear + cache warmup) x 10</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>Docker on Ubuntu 16.04</Identifier>
+        <Value>53</Value>
+        <RawString>53</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>Docker on Windows 10 with VirtualBox</Identifier>
+        <Value>1286</Value>
+        <RawString>1286</RawString>
+        <JSON>{"compiler-options":{"compiler-options":"ln: failed to create symbolic link 'symlink': Protocol error"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>Docker on Windows 10 with Hyper-V</Identifier>
+        <Value>993</Value>
+        <RawString>993</RawString>
+        <JSON>{"compiler-options":{"compiler-options":"ln: failed to create symbolic link 'symlink': Operation not supported"}}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+</PhoronixTestSuite>

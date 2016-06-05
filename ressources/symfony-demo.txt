@@ -1,0 +1,240 @@
+# https://github.com/aarnaud/symfony-demo
+
+Docker Beta
+###### Started at 13:44:17 (1465047857) ######
+3.65s rm -rf vendor bin
+78.70s composer install --no-interaction --quiet
+9.27s app/console --env=prod cache:clear --quiet
+0.78s app/console --env=prod cache:warmup --quiet
+4.40s rm -rf vendor bin
+84.91s composer install --no-interaction --quiet
+10.10s app/console --env=prod cache:clear --quiet
+0.88s app/console --env=prod cache:warmup --quiet
+4.22s rm -rf vendor bin
+86.15s composer install --no-interaction --quiet
+9.52s app/console --env=prod cache:clear --quiet
+0.82s app/console --env=prod cache:warmup --quiet
+4.88s rm -rf vendor bin
+84.61s composer install --no-interaction --quiet
+9.92s app/console --env=prod cache:clear --quiet
+0.86s app/console --env=prod cache:warmup --quiet
+5.45s rm -rf vendor bin
+80.45s composer install --no-interaction --quiet
+10.27s app/console --env=prod cache:clear --quiet
+0.79s app/console --env=prod cache:warmup --quiet
+3.97s rm -rf vendor bin
+86.19s composer install --no-interaction --quiet
+9.32s app/console --env=prod cache:clear --quiet
+0.87s app/console --env=prod cache:warmup --quiet
+4.18s rm -rf vendor bin
+86.52s composer install --no-interaction --quiet
+10.10s app/console --env=prod cache:clear --quiet
+0.71s app/console --env=prod cache:warmup --quiet
+4.68s rm -rf vendor bin
+88.94s composer install --no-interaction --quiet
+9.24s app/console --env=prod cache:clear --quiet
+0.81s app/console --env=prod cache:warmup --quiet
+4.36s rm -rf vendor bin
+80.55s composer install --no-interaction --quiet
+8.40s app/console --env=prod cache:clear --quiet
+0.68s app/console --env=prod cache:warmup --quiet
+3.94s rm -rf vendor bin
+86.84s composer install --no-interaction --quiet
+10.37s app/console --env=prod cache:clear --quiet
+0.92s app/console --env=prod cache:warmup --quiet
+ln: failed to create symbolic link 'symlink': Operation not su
+###### Ended at 14:00:50 (1465048850) - duration: 993s ######
+
+
+
+
+Docker VirtualBox
+
+###### Started at 08:38:22 (1465029502) ######
+6.73s rm -rf vendor bin
+114.11s composer install --no-interaction --quiet
+
+
+  [Symfony\Component\Filesystem\Exception\IOException]
+  Failed to remove directory "/var/www/app/cache/pro~/annotations/d3": rmdir(/var/www/app/cache/pro~/annotations/d3):
+   Directory not empty.
+
+
+cache:clear [--no-warmup] [--no-optional-warmers] [-h|--help] [-q|--quiet] [-v|vv|vvv|--verbose] [-V|--version] [--ansi] [--no-ansi] [-n|--no-interaction] [-s|--shell] [--process-isolation] [-e|--env ENV] [--no-debug] [--] <command>
+
+Command exited with non-zero status 1
+19.57s app/console --env=prod cache:clear --quiet
+3.84s app/console --env=prod cache:warmup --quiet
+4.89s rm -rf vendor bin
+117.29s composer install --no-interaction --quiet
+
+
+  [Symfony\Component\Filesystem\Exception\IOException]
+  Failed to remove directory "/var/www/app/cache/pro~/annotations/d3": rmdir(/var/www/app/cache/pro~/annotations/d3):
+   Directory not empty.
+
+
+cache:clear [--no-warmup] [--no-optional-warmers] [-h|--help] [-q|--quiet] [-v|vv|vvv|--verbose] [-V|--version] [--ansi] [--no-ansi] [-n|--no-interaction] [-s|--shell] [--process-isolation] [-e|--env ENV] [--no-debug] [--] <command>
+
+Command exited with non-zero status 1
+1.31s app/console --env=prod cache:clear --quiet
+3.83s app/console --env=prod cache:warmup --quiet
+5.16s rm -rf vendor bin
+115.77s composer install --no-interaction --quiet
+
+
+  [Symfony\Component\Filesystem\Exception\IOException]
+  Failed to remove directory "/var/www/app/cache/pro~/annotations/d3": rmdir(/var/www/app/cache/pro~/annotations/d3):
+   Directory not empty.
+
+
+cache:clear [--no-warmup] [--no-optional-warmers] [-h|--help] [-q|--quiet] [-v|vv|vvv|--verbose] [-V|--version] [--ansi] [--no-ansi] [-n|--no-interaction] [-s|--shell] [--process-isolation] [-e|--env ENV] [--no-debug] [--] <command>
+
+Command exited with non-zero status 1
+1.22s app/console --env=prod cache:clear --quiet
+3.66s app/console --env=prod cache:warmup --quiet
+4.98s rm -rf vendor bin
+116.31s composer install --no-interaction --quiet
+
+
+  [Symfony\Component\Filesystem\Exception\IOException]
+  Failed to remove directory "/var/www/app/cache/pro~/annotations/d3": rmdir(/var/www/app/cache/pro~/annotations/d3):
+   Directory not empty.
+
+
+cache:clear [--no-warmup] [--no-optional-warmers] [-h|--help] [-q|--quiet] [-v|vv|vvv|--verbose] [-V|--version] [--ansi] [--no-ansi] [-n|--no-interaction] [-s|--shell] [--process-isolation] [-e|--env ENV] [--no-debug] [--] <command>
+
+Command exited with non-zero status 1
+1.18s app/console --env=prod cache:clear --quiet
+3.93s app/console --env=prod cache:warmup --quiet
+5.16s rm -rf vendor bin
+117.58s composer install --no-interaction --quiet
+
+
+  [Symfony\Component\Filesystem\Exception\IOException]
+  Failed to remove directory "/var/www/app/cache/pro~/annotations/d3": rmdir(/var/www/app/cache/pro~/annotations/d3):
+   Directory not empty.
+
+
+cache:clear [--no-warmup] [--no-optional-warmers] [-h|--help] [-q|--quiet] [-v|vv|vvv|--verbose] [-V|--version] [--ansi] [--no-ansi] [-n|--no-interaction] [-s|--shell] [--process-isolation] [-e|--env ENV] [--no-debug] [--] <command>
+
+Command exited with non-zero status 1
+1.06s app/console --env=prod cache:clear --quiet
+3.84s app/console --env=prod cache:warmup --quiet
+5.33s rm -rf vendor bin
+116.61s composer install --no-interaction --quiet
+
+
+  [Symfony\Component\Filesystem\Exception\IOException]
+  Failed to remove directory "/var/www/app/cache/pro~/annotations/d3": rmdir(/var/www/app/cache/pro~/annotations/d3):
+   Directory not empty.
+
+
+cache:clear [--no-warmup] [--no-optional-warmers] [-h|--help] [-q|--quiet] [-v|vv|vvv|--verbose] [-V|--version] [--ansi] [--no-ansi] [-n|--no-interaction] [-s|--shell] [--process-isolation] [-e|--env ENV] [--no-debug] [--] <command>
+
+Command exited with non-zero status 1
+1.04s app/console --env=prod cache:clear --quiet
+3.82s app/console --env=prod cache:warmup --quiet
+5.13s rm -rf vendor bin
+117.20s composer install --no-interaction --quiet
+
+
+  [Symfony\Component\Filesystem\Exception\IOException]
+  Failed to remove directory "/var/www/app/cache/pro~/annotations/d3": rmdir(/var/www/app/cache/pro~/annotations/d3):
+   Directory not empty.
+
+
+cache:clear [--no-warmup] [--no-optional-warmers] [-h|--help] [-q|--quiet] [-v|vv|vvv|--verbose] [-V|--version] [--ansi] [--no-ansi] [-n|--no-interaction] [-s|--shell] [--process-isolation] [-e|--env ENV] [--no-debug] [--] <command>
+
+Command exited with non-zero status 1
+1.50s app/console --env=prod cache:clear --quiet
+3.79s app/console --env=prod cache:warmup --quiet
+5.16s rm -rf vendor bin
+116.42s composer install --no-interaction --quiet
+
+
+  [Symfony\Component\Filesystem\Exception\IOException]
+  Failed to remove directory "/var/www/app/cache/pro~/annotations/d3": rmdir(/var/www/app/cache/pro~/annotations/d3):
+   Directory not empty.
+
+
+cache:clear [--no-warmup] [--no-optional-warmers] [-h|--help] [-q|--quiet] [-v|vv|vvv|--verbose] [-V|--version] [--ansi] [--no-ansi] [-n|--no-interaction] [-s|--shell] [--process-isolation] [-e|--env ENV] [--no-debug] [--] <command>
+
+Command exited with non-zero status 1
+1.29s app/console --env=prod cache:clear --quiet
+3.79s app/console --env=prod cache:warmup --quiet
+5.08s rm -rf vendor bin
+116.92s composer install --no-interaction --quiet
+
+
+  [Symfony\Component\Filesystem\Exception\IOException]
+  Failed to remove directory "/var/www/app/cache/pro~/annotations/d3": rmdir(/var/www/app/cache/pro~/annotations/d3):
+   Directory not empty.
+
+
+cache:clear [--no-warmup] [--no-optional-warmers] [-h|--help] [-q|--quiet] [-v|vv|vvv|--verbose] [-V|--version] [--ansi] [--no-ansi] [-n|--no-interaction] [-s|--shell] [--process-isolation] [-e|--env ENV] [--no-debug] [--] <command>
+
+Command exited with non-zero status 1
+1.04s app/console --env=prod cache:clear --quiet
+3.82s app/console --env=prod cache:warmup --quiet
+4.86s rm -rf vendor bin
+116.64s composer install --no-interaction --quiet
+
+
+  [Symfony\Component\Filesystem\Exception\IOException]
+  Failed to remove directory "/var/www/app/cache/pro~/annotations/d3": rmdir(/var/www/app/cache/pro~/annotations/d3):
+   Directory not empty.
+
+
+cache:clear [--no-warmup] [--no-optional-warmers] [-h|--help] [-q|--quiet] [-v|vv|vvv|--verbose] [-V|--version] [--ansi] [--no-ansi] [-n|--no-interaction] [-s|--shell] [--process-isolation] [-e|--env ENV] [--no-debug] [--] <command>
+
+Command exited with non-zero status 1
+1.17s app/console --env=prod cache:clear --quiet
+3.90s app/console --env=prod cache:warmup --quiet
+ln: failed to create symbolic link 'symlink': Protocol error
+###### Ended at 08:59:48 (1465030788) - duration: 1286s ######
+
+
+###### Started at 15:24:37 (1465140277) ######
+0.00s rm -rf vendor bin
+3.40s composer install --no-interaction --quiet
+1.62s app/console --env=prod cache:clear --quiet
+0.25s app/console --env=prod cache:warmup --quiet
+0.25s rm -rf vendor bin
+3.15s composer install --no-interaction --quiet
+1.69s app/console --env=prod cache:clear --quiet
+0.23s app/console --env=prod cache:warmup --quiet
+0.25s rm -rf vendor bin
+3.12s composer install --no-interaction --quiet
+1.70s app/console --env=prod cache:clear --quiet
+0.24s app/console --env=prod cache:warmup --quiet
+0.24s rm -rf vendor bin
+3.08s composer install --no-interaction --quiet
+1.65s app/console --env=prod cache:clear --quiet
+0.24s app/console --env=prod cache:warmup --quiet
+0.35s rm -rf vendor bin
+3.14s composer install --no-interaction --quiet
+1.70s app/console --env=prod cache:clear --quiet
+0.24s app/console --env=prod cache:warmup --quiet
+0.24s rm -rf vendor bin
+3.08s composer install --no-interaction --quiet
+1.67s app/console --env=prod cache:clear --quiet
+0.23s app/console --env=prod cache:warmup --quiet
+0.25s rm -rf vendor bin
+3.31s composer install --no-interaction --quiet
+1.67s app/console --env=prod cache:clear --quiet
+0.23s app/console --env=prod cache:warmup --quiet
+0.25s rm -rf vendor bin
+3.13s composer install --no-interaction --quiet
+1.70s app/console --env=prod cache:clear --quiet
+0.23s app/console --env=prod cache:warmup --quiet
+0.25s rm -rf vendor bin
+3.13s composer install --no-interaction --quiet
+1.65s app/console --env=prod cache:clear --quiet
+0.24s app/console --env=prod cache:warmup --quiet
+0.25s rm -rf vendor bin
+3.01s composer install --no-interaction --quiet
+1.61s app/console --env=prod cache:clear --quiet
+0.23s app/console --env=prod cache:warmup --quiet
+###### Ended at 15:25:30 (1465140330) - duration: 53s ######
+

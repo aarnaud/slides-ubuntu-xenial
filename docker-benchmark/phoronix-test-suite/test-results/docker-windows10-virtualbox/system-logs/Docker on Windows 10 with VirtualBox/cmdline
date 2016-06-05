@@ -1,0 +1,1 @@
+loglevel=3 user=docker console=ttyS0 console=tty0 noembed nomodeset norestore waitusb=10:LABEL=boot2docker-data base initrd=/boot/initrd.img BOOT_IMAGE=/boot/vmlinuz64 

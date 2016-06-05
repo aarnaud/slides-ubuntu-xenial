@@ -1,0 +1,2 @@
+earlyprintk=serial console=ttyS0
+

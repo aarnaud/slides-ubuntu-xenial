@@ -1,0 +1,164 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v6.4.0-->
+<PhoronixTestSuite>
+  <Generated>
+    <Title>docker-windows10-hyperV</Title>
+    <LastModified>2016-06-05 11:57:33</LastModified>
+    <TestClient>Phoronix Test Suite v6.4.0 (Hasvik)</TestClient>
+    <Description>microsoft testing on Ubuntu 16.04 via the Phoronix Test Suite.</Description>
+  </Generated>
+  <System>
+    <Identifier>Docker on Windows 10 with Hyper-V</Identifier>
+    <Hardware>Processor: Intel Core i5-4440 @ 3.02GHz (4 Cores), Motherboard: Microsoft Virtual Machine, Memory: 13312MB, Disk: 64GB Virtual Disk</Hardware>
+    <Software>OS: Ubuntu 16.04, Kernel: 4.4.11-moby (x86_64), Compiler: GCC 5.3.1 20160413, File-System: cifs, Screen Resolution: 1152x864, System Layer: microsoft</Software>
+    <User>root</User>
+    <TimeStamp>2016-06-05 11:16:57</TimeStamp>
+    <TestClientVersion>6.4.0</TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"compiler-configuration":"--build=x86_64-linux-gnu --disable-browser-plugin --disable-vtable-verify --disable-werror --enable-checking=release --enable-clocale=gnu --enable-gnu-unique-object --enable-gtk-cairo --enable-java-awt=gtk --enable-java-home --enable-languages=c,ada,c++,java,go,d,fortran,objc,obj-c++ --enable-libmpx --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-multiarch --enable-multilib --enable-nls --enable-objc-gc --enable-plugin --enable-shared --enable-threads=posix --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-abi=m64 --with-arch-32=i686 --with-arch-directory=amd64 --with-default-libstdcxx-abi=new --with-multilib-list=m32,m64,mx32 --with-tune=generic -v","disk-scheduler":"DEADLINE","disk-mount-options":"actimeo=1,addr=10.0.75.1,cache=strict,dir_mode=0755,domain=DESKTOP-QDSF686,file_mode=0755,gid=0,iocharset=utf8,mapposix,noforcegid,noforceuid,noperm,nounix,relatime,rsize=61440,rw,serverino,uid=0,username=anthony,vers=1.0,wsize=65536"}</JSON>
+  </System>
+  <Result>
+    <Identifier>pts/iozone-1.8.0</Identifier>
+    <Title>IOzone</Title>
+    <AppVersion>3.405</AppVersion>
+    <Arguments>-r 4k -s 512M -i0 -i1</Arguments>
+    <Description>Record Size: 4Kb - File Size: 512MB - Disk Test: Read Performance</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>Docker on Windows 10 with Hyper-V</Identifier>
+        <Value>385.70</Value>
+        <RawString>382.7294921875:364.1181640625:426.2724609375:365.2822265625:451.0478515625:324.7724609375</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3"}}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/iozone-1.8.0</Identifier>
+    <Title>IOzone</Title>
+    <AppVersion>3.405</AppVersion>
+    <Arguments>-r 4k -s 512M -i0</Arguments>
+    <Description>Record Size: 4Kb - File Size: 512MB - Disk Test: Write Performance</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>Docker on Windows 10 with Hyper-V</Identifier>
+        <Value>65.12</Value>
+        <RawString>42.087890625:66.3583984375:105.0498046875:87.9794921875:42.8310546875:46.435546875</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3"}}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/ramspeed-1.4.0</Identifier>
+    <Title>RAMspeed SMP</Title>
+    <AppVersion>3.5.0</AppVersion>
+    <Arguments>COPY -b 3</Arguments>
+    <Description>Type: Copy - Benchmark: Integer</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>Docker on Windows 10 with Hyper-V</Identifier>
+        <Value>11833.61</Value>
+        <RawString>11833.61</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":""}}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/ramspeed-1.4.0</Identifier>
+    <Title>RAMspeed SMP</Title>
+    <AppVersion>3.5.0</AppVersion>
+    <Arguments>COPY -b 6</Arguments>
+    <Description>Type: Copy - Benchmark: Floating Point</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>Docker on Windows 10 with Hyper-V</Identifier>
+        <Value>11758.38</Value>
+        <RawString>11758.38</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":""}}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/stream-1.3.0</Identifier>
+    <Title>Stream</Title>
+    <AppVersion>2013-01-17</AppVersion>
+    <Arguments>Triad</Arguments>
+    <Description>Type: Triad</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>Docker on Windows 10 with Hyper-V</Identifier>
+        <Value>13995.54</Value>
+        <RawString>14169.2:14173.9:13759.1:13715.5:14160</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -march=native -fopenmp"}}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/c-ray-1.1.0</Identifier>
+    <Title>C-Ray</Title>
+    <AppVersion>1.1</AppVersion>
+    <Arguments></Arguments>
+    <Description>Total Time</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>Docker on Windows 10 with Hyper-V</Identifier>
+        <Value>28.91</Value>
+        <RawString>28.882:28.935:28.901</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lm -lpthread -O3"}}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/apache-1.6.1</Identifier>
+    <Title>Apache Benchmark</Title>
+    <AppVersion>2.4.7</AppVersion>
+    <Arguments></Arguments>
+    <Description>Static Web Page Serving</Description>
+    <Scale>Requests Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>Docker on Windows 10 with Hyper-V</Identifier>
+        <Value>4520.55</Value>
+        <RawString>4022.97:2651.23:5379.96:4209.34:5528.47:5331.3</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-shared -fPIC -O2 -pthread"}}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>symfony-demo</Identifier>
+    <Title>Symfony Demo</Title>
+    <AppVersion>2.8</AppVersion>
+    <Arguments></Arguments>
+    <Description>(composer install + cache clear + cache warmup) x 10</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>Docker on Windows 10 with Hyper-V</Identifier>
+        <Value>993</Value>
+        <RawString>993</RawString>
+        <JSON>{"compiler-options":{"compiler-options":"ln: failed to create symbolic link 'symlink': Operation not supported"}}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+</PhoronixTestSuite>
