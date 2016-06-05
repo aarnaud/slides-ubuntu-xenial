@@ -5,5 +5,14 @@ phoronix-test-suite user-config-set ResultsDirectory=~/phoronix-test-suite/test-
 phoronix-test-suite user-config-set UploadResults=FALSE
 phoronix-test-suite user-config-set Configured=TRUE
 
-phoronix-test-suite install pts/apache pts/fio pts/fs-mark pts/ramspeed pts/stream pts/c-ray
-phoronix-test-suite default-benchmark pts/apache pts/fio pts/fs-mark pts/ramspeed pts/stream pts/c-ray
+phoronix-test-suite install pts/apache pts/sqlite pts/iozone pts/fs-mark pts/ramspeed pts/stream pts/c-ray
+
+STARTAT=$(date +%s)
+
+phoronix-test-suite default-benchmark pts/apache pts/sqlite pts/iozone pts/fs-mark pts/ramspeed pts/stream pts/c-ray
+
+ENDAT=$(date +%s)
+
+let "DURATION=$ENDAT-$STARTAT"
+
+echo "###### Duration: ${DURATION}s ######"
