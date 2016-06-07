@@ -42,6 +42,7 @@
     <div class="slides">
         <section>
             <h1>Ubuntu Xenial (16.04 LTS)</h1>
+            <img class="no-border" src="ressources/img/ubuntu-logo32.png"/>
             <h3>for Web development</h3>
             <p>
                 <small>Created by <a href="http://www.anthony-arnaud.fr">Anthony ARNAUD</a> / <a
@@ -49,35 +50,37 @@
             </p>
         </section>
         <section>
-            <h2>Why linux ?</h2>
-            <img data-src="ressources/img/gif/question.gif">
+            <section>
+                <h2>Why linux ?</h2>
+                <img data-src="ressources/img/gif/question.gif">
+            </section>
+            <section>
+                <h3>Strengths</h3>
+                <ul>
+                    <li class="fragment">Free</li>
+                    <li class="fragment">Open source</li>
+                    <li class="fragment">Community</li>
+                    <li class="fragment">Customisable</li>
+                    <li class="fragment">Secured</li>
+                    <li class="fragment">Stability </li>
+                    <li class="fragment">No Blue Screen of Death</li>
+                </ul>
+            </section>
+            <section>
+                <h3>Weakness</h3>
+                <ul>
+                    <li class="fragment">Microsoft Office</li>
+                    <li class="fragment">Difficult for newbie (format by school) </li>
+                    <li class="fragment">Property driver/protocol support</li>
+                    <li class="fragment">Graphical interface</li>
+                </ul>
+            </section>
         </section>
         <section>
-            <h3>Strengths</h3>
-            <ul>
-                <li class="fragment">Free</li>
-                <li class="fragment">Open source</li>
-                <li class="fragment">Community</li>
-                <li class="fragment">Customisable</li>
-                <li class="fragment">Secured</li>
-                <li class="fragment">Stability </li>
-                <li class="fragment">No Blue Screen of Death</li>
-            </ul>
-        </section>
-        <section>
-            <h3>Weakness</h3>
-            <ul>
-                <li class="fragment">Microsoft Office</li>
-                <li class="fragment">Difficult for newbie (format by school) </li>
-                <li class="fragment">Property driver/protocol support</li>
-                <li class="fragment">Graphical interface</li>
-            </ul>
-        </section>
-        <section>
-            <h2>So, Docker on Microsoft Windows ?</h2>
-            <img data-src="ressources/img/gif/wtf.gif">
-        </section>
-        <section>
+            <section>
+                <h2>So, Docker on Microsoft Windows ?</h2>
+                <img data-src="ressources/img/gif/wtf.gif">
+            </section>
             <section>
                 <h3>Docker Benchmarking</h2>
                 <ul>
@@ -89,39 +92,48 @@
             <section 
                 data-transition="slide"
                 data-background-image="docker-benchmark/phoronix-test-suite/test-results/merge/result-graphs/systems.svg"
-                data-background-size="contain">
+                data-background-size="contain"
+                data-background-transition="slide">
             </section>
             <section 
                 data-background-image="docker-benchmark/phoronix-test-suite/test-results/merge/result-graphs/3.svg"
-                data-background-size="contain">
+                data-background-size="contain"
+                data-background-transition="slide">
             </section>
             <section 
                 data-background-image="docker-benchmark/phoronix-test-suite/test-results/merge/result-graphs/4.svg"
-                data-background-size="contain">
+                data-background-size="contain"
+                data-background-transition="slide">
             </section>
             <section 
                 data-background-image="docker-benchmark/phoronix-test-suite/test-results/merge/result-graphs/5.svg"
-                data-background-size="contain">
+                data-background-size="contain"
+                data-background-transition="slide">
             </section>
             <section 
                 data-background-image="docker-benchmark/phoronix-test-suite/test-results/merge/result-graphs/6.svg"
-                data-background-size="contain">
+                data-background-size="contain"
+                data-background-transition="slide">
             </section>
             <section 
                 data-background-image="docker-benchmark/phoronix-test-suite/test-results/merge/result-graphs/7.svg"
-                data-background-size="contain">
+                data-background-size="contain"
+                data-background-transition="slide">
             </section>
             <section 
                 data-background-image="docker-benchmark/phoronix-test-suite/test-results/merge/result-graphs/8.svg"
-                data-background-size="contain">
+                data-background-size="contain"
+                data-background-transition="slide">
             </section>
             <section 
                 data-background-image="docker-benchmark/phoronix-test-suite/test-results/merge/result-graphs/9.svg"
-                data-background-size="contain">
+                data-background-size="contain"
+                data-background-transition="slide">
             </section>
             <section 
                 data-background-image="docker-benchmark/phoronix-test-suite/test-results/merge/result-graphs/10.svg"
-                data-background-size="contain">
+                data-background-size="contain"
+                data-background-transition="slide">
             </section>
             <section>
                 <h3>Windows errors</h3>
@@ -144,6 +156,26 @@
             <section>
                 <h3>Docker and the security</h3>
                 <img data-src="ressources/img/docker/DockerHyper-V7.PNG">
+            </section>
+            <section>
+                <h3>Docker benchmarking conclusion</h3>
+                <ul>
+                    <li class="fragment">
+                        Using Linux Virtual Machine on Windows
+                        <ul>
+                            <li class="fragment">Insignificant overhead CPU and Memory</li>
+                            <li class="fragment">
+                                The shared between Windows and linux is the problem:
+                                <ul>
+                                    <li class="fragment">VBoxSF protocol with Boot2Docker (VirtualBox)</li>
+                                    <li class="fragment">CIFS protocol with Docker Beta (Hyper-V)</li>
+                                </ul>
+                            </li>
+                            <li class="fragment">Some linux filesystems features don't work (Symbolic link, Inotify) </li>
+                        </ul>
+                    </li>
+                    <li class="fragment">Native performance on Linux host</li>
+                </ul>
             </section>
         </section>
     </div>
