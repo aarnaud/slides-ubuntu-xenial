@@ -45,8 +45,8 @@
             <img class="no-border" src="ressources/img/ubuntu-logo32.png"/>
             <h3>for Web development</h3>
             <p>
-                <small>Created by <a href="http://www.anthony-arnaud.fr">Anthony ARNAUD</a> / <a
-                        href="http://twitter.com/bluelogon">@bluelogon</a> - 10/06/2016</small>
+                <small>Created by <a href="http://www.anthony-arnaud.fr" target="_blank">Anthony ARNAUD</a> / <a
+                        href="http://twitter.com/bluelogon" target="_blank">@bluelogon</a> - 10/06/2016</small>
             </p>
         </section>
         <section>
@@ -55,14 +55,20 @@
                 <img data-src="ressources/img/gif/question.gif">
             </section>
             <section>
+                <h3>Server Usage Statistics 06/2016</h3>
+                <img data-src="ressources/img/servers-statistics.png">
+                <b><a href="https://trends.builtwith.com/server" target="_blank"></a>trends.builtwith.com/server</b>
+            </section>
+            <section>
                 <h3>Strengths</h3>
                 <ul>
                     <li class="fragment">Free</li>
                     <li class="fragment">Open source</li>
-                    <li class="fragment">Community</li>
                     <li class="fragment">Customisable</li>
                     <li class="fragment">Secured</li>
                     <li class="fragment">Stability </li>
+                    <li class="fragment">Large community</li>
+                    <li class="fragment">Software repositories</li>
                     <li class="fragment">No Blue Screen of Death</li>
                 </ul>
             </section>
@@ -84,10 +90,18 @@
             <section>
                 <h3>Docker Benchmarking</h3>
                 <ul>
-                    <li class="fragment">on Ubuntu 16.04</li>
-                    <li class="fragment">on Windows 10 with VirtualBox</li>
-                    <li class="fragment">on Windows 10 with Hyper-V (Docker Beta)</li>
+                    <li class="fragment">Host Ubuntu 16.04</li>
+                    <li class="fragment">Host Windows 10 with Linux in VirtualBox</li>
+                    <li class="fragment">Host Windows 10 with Linux in Hyper-V Guest(Docker Beta)</li>
                 </ul>
+            </section>
+            <section>
+                <h3>Docker disk benchmarking through a volume mount</h3>
+                <img src="ressources/img/docker-share.png">
+            </section>
+            <section>
+                <h3>Docker disk benchmarking through a volume mount</h3>
+                <img src="ressources/img/docker-share2.png">
             </section>
             <section 
                 data-transition="slide"
@@ -174,7 +188,7 @@
                             <li class="fragment">Some linux filesystems features don't work (Symbolic link, Inotify) </li>
                         </ul>
                     </li>
-                    <li class="fragment">Native performance on Linux host</li>
+                    <li class="fragment"><b>Native performance on Linux host</b></li>
                 </ul>
             </section>
         </section>
@@ -252,25 +266,31 @@
             </section>
             <section>
                 <h3>GPG : with SmartCard</h3>
-                <ul>
-                    <li>
-                        ~/.gnupg/gpg.conf
-                        <pre>
+                <div class="fragment">
+                    <img  width="300" src="ressources/img/smartcard.jpg">
+                    <img  width="190" src="ressources/img/YubiKey-4.png">
+                </div>
+                <div>
+                    <ul>
+                        <li class="fragment">
+                            ~/.gnupg/gpg.conf
+                            <pre>
 use-agent
-                        </pre>
-                    </li>
-                    <li>
-                        ~/.gnupg/gpg-agent.conf
-                        <pre>
+                            </pre>
+                        </li>
+                        <li class="fragment">
+                            ~/.gnupg/gpg-agent.conf
+                            <pre>
 # for enable SSH support
 enable-ssh-support
 default-cache-ttl-ssh 21600
 # for GPG
 default-cache-ttl 300
 max-cache-ttl 3000
-                        </pre>
-                    </li>
-                </ul>
+                            </pre>
+                        </li>
+                    </ul>
+                </div>
             </section>
             <section>
                 <h3>GPG - Thunderbird/Enigmail</h3>
@@ -301,6 +321,18 @@ max-cache-ttl 3000
                 <img src="ressources/img/lvm-on-dm-crypt.png"/>
             </section>
         </section>
+        <section>
+            <h2>Thanks</h2>
+            <div>
+                <ul>
+                    <li><a href="https://github.com/aarnaud/ansible-ubuntu-desktop-post-install" target="_blank">Provisionning Ubuntu Desktop for Web developpement</a></li>
+                    <li>
+                        <a href="https://aarnaud.github.io/slides-ubuntu-xenial" target="_blank">aarnaud.github.io/slides-ubuntu-xenial</a>
+                    </li>
+                </ul>
+            </div>
+            <img src="ressources/img/qr-code-slides.svg"/>
+        </section>
     </div>
 
 </div>
@@ -316,6 +348,7 @@ max-cache-ttl 3000
         progress: true,
         history: true,
         center: true,
+        hideAddressBar: true,
 
         transition: 'slide', // none/fade/slide/convex/concave/zoom
         
