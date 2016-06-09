@@ -209,8 +209,10 @@
                     <li class="fragment">LTS version</li>
                     <li class="fragment">TCP code has been refactore</li>
                     <li class="fragment">Improved BTRFS (Used by Facebook)</li>
-                    <li class="fragment">Support of ZFS</li>
+                    <li class="fragment">ZFS support</li>
                     <li class="fragment">Improved Cgroups</li>
+                    <li class="fragment">Improved Apparmor</li>
+                    <li class="fragment">Secure boot support</li>
                 </ul>
             </section>
             <section>
@@ -219,6 +221,51 @@
                     <li class="fragment">Python 3 on server</li>
                     <li class="fragment">Python 2 on desktop</li>
                     <li class="fragment">Python 2 and 3 can coexist</li>
+                </ul>
+            </section>
+            <section>
+                <h3>Applications and libs</h3>
+                <ul>
+                    <li class="fragment"><b>LXD 2.0 Stable</b>: container "hypervisor" and a new user experience for LXC</li>
+                    <li class="fragment"><b>umake</b>: command line tool which allows you to download the latest version of popular developer tools</li>
+                    <li class="fragment">Native support of <b>GPG SmartCards and U2F</b></li>
+                </ul>
+            </section>
+        </section>
+        <section>
+            <section>
+                <h2>Security</h2>
+                <img class="no-border" src="ressources/img/gif/security.gif" />
+            </section>
+            <section>
+                <h3>GPG : Gnu PGP</h3>
+                <ul>
+                    <li>for encryption/decryption files</li>
+                    <li>for encrypt/decrypt emails</li>
+                    <li>for sign emails and the git commits</li>
+                    <li>for authentification</li>
+                </ul>
+            </section>
+            <section>
+                <h3>GPG : with SmartCard</h3>
+                <ul>
+                    <li>
+                        ~/.gnupg/gpg.conf
+                        <pre>
+use-agent
+                        </pre>
+                    </li>
+                    <li>
+                        ~/.gnupg/gpg-agent.conf
+                        <pre>
+# for enable SSH support
+enable-ssh-support
+default-cache-ttl-ssh 21600
+# for GPG
+default-cache-ttl 300
+max-cache-ttl 3000
+                        </pre>
+                    </li>
                 </ul>
             </section>
         </section>
